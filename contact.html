@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js"></script>
+    <title>Eco Buiscuits | Contact</title>
+</head>
+
+<body class="" id="darkmode-style">
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,w_40/v1576087842/EcoBiscuits/logo_sshctf.png" class="header-logo" alt="">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="assortiment.html">Assortiment</a></li>
+                        <li><a href="contact.html" class="current">Contact</a></li>
+                        <li><a href="overons.html">Over ons</a></li>
+                        <li><a href="#">Talen</a>
+                            <ul>
+                                <li><a href="index.html">NL</a></li>
+                                <li><a href="index_fr.html">FR</a></li>
+                                <li><a href="index_en.html">EN</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- 
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox" name="checkDarkmode" onclick="Darkmodeactivator(this)" id="darkmode" />
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                         -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contact-first">
+                <div class="contactformulier">
+                    <form action="action_page.php">
+                        <div class="privacy-claimer">
+                            <p>*Deze gegevens worden gebruikt om uw mail persoonlijk te kunnen beantwoorden en te weten wie ons contacteert</p>
+                        </div>
+
+                        <label for="voornaam">Voornaam*</label>
+                        <input type="text" id="voornaam" name="voornaam" class="voornaam">
+
+                        <label for="achternaam">Achternaam*</label>
+                        <input type="text" id="achternaam" name="achternaam" class="achternaam">
+
+                        <label for="email">Email adres</label>
+                        <input type="text" id="email" name="email" class="email">
+
+                        <label for="reden">Reden</label>
+                        <select id="reden" name="reden" class="reden">
+                                          <option value="bestelling">Bestelling</option>
+                                          <option value="vraag">Vraag</option>
+                                          <option value="opmerking">Opmerking</option>
+                                          <option value="suggestie">Suggestie</option>
+                                        </select>
+
+                        <label for="bericht">Bericht</label>
+                        <textarea id="bericht" name="bericht" style="height:200px" class="bericht"></textarea>
+
+                        <input type="submit" value="Verzenden">
+                    </form>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Lossing%2021%20B%202260%20Heultje-Westerlo%20Belgi%C3%AB&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+
+                    </div>
+                </div>
+                <div class="contactgegevens">
+                    <p>Lossing 21B <br> 2260 Heultje-Westerlo <br> België<br> </p>
+                    <p>info@ecobiscuits.be</p>
+                    <p>015 22 50 88</p>
+                </div>
+                <div class="openingsuren">
+                    <p>Openingsuren:</p>
+                    <p>Maandag tot en met vrijdag</p>
+                    <p>van 8 uur tot 17 uur.</p>
+                    <p>Tijdens weekend en feestdagen</p>
+                    <p>gesloten.</p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="openinguren">
+                    <p>Maandag - Vrijdag: 8u tot 17u</p>
+                    <p>Weekend en feestdagen gesloten.</p>
+                </div>
+                <div class="social">
+                    <p>Volg ons:
+                        <a href="https://www.facebook.com/ecobiscuits.be/" target="_blank"><img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,h_20,q_40,w_20/v1576087827/EcoBiscuits/facebook_mkeeln.png" alt="Volg ons op facebook"></a>
+                    </p>
+                </div>
+                <div class="adres">
+                    <p>Lossing 21 • B 2260 Heultje-Westerlo • België</p>
+                    <p>info@ecobiscuits.be</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

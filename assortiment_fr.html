@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Eco Buiscuits | Assortiment</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,w_40/v1576087842/EcoBiscuits/logo_sshctf.png" class="header-logo" alt="">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                    <ul>
+                        <li><a href="index_fr.html">Home</a></li>
+                        <li><a href="assortiment_fr.html" class="current">Assortiment</a></li>
+                        <li><a href="contact_fr.html">Contacter</a></li>
+                        <li><a href="overons_fr.html">A propos de nous</a></li>
+                        <li><a href="#">Langues</a>
+                            <ul>
+                                <li><a href="index.html">NL</a></li>
+                                <li><a href="index_fr.html">FR</a></li>
+                                <li><a href="index_en.html">EN</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- 
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox" name="checkDarkmode" onclick="Darkmodeactivator(this)" id="darkmode" />
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                         -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="cardholder">
+
+                <!--  -->
+
+                <h2>Per stuk</h2>
+                <span></span>
+
+                <!--  -->
+
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087861/EcoBiscuits/stuk_spelt_speculaas_amandel_gnvl2y.png" alt="">
+                    <h3>Bio: Amandel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos <button id="myBtn">Meer info</button></p>
+                </div>
+                <!-- 
+                    OPLOSSING 1: met javascript
+                    De eerste een meest voor de hand liggende oplossing is uiteraard met javascript. Indien deze uitgeschakeld
+                    wordt, zal de popup dus ook niet werken.
+                 -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087861/EcoBiscuits/stuk_spelt_speculaas_amandel_gnvl2y.png" alt="">
+                        <h3>Ingredienten</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sed.</p>
+                        <h3>Beschrijving</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum enim assumenda quam, accusantium eligendi placeat aliquid aut ab ipsa reprehenderit ea, dignissimos reiciendis? Adipisci nesciunt illo repudiandae neque quaerat maxime
+                            magnam, voluptate quasi ad aliquid. Cupiditate laborum velit similique earum.</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087848/EcoBiscuits/stuk_bio_choco_noten_l8kiro.png" alt="">
+                    <h3>Bio: Choco / noten</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087849/EcoBiscuits/stuk_bio_choco_sinaas_ugs0kt.png" alt="">
+                    <h3>Bio: Choco / Sinaas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576089784/EcoBiscuits/stuk_bio_choco_bsqx1e.png" alt="">
+                    <h3>Bio: Choco</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087850/EcoBiscuits/stuk_bio_kokos_o20ra0.png" alt="">
+                    <h3>Bio: Kokos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087851/EcoBiscuits/stuk_bio_muesli_auycet.png" alt="">
+                    <h3>Bio: Muesli</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087854/EcoBiscuits/stuk_bio_noten_dbdfbn.png" alt="">
+                    <h3>Bio: Noten</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087856/EcoBiscuits/stuk_bio_vijgen_qxud7u.png" alt="">
+                    <h3>Bio: Vijgen</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087857/EcoBiscuits/stuk_bio_vruchten_uiu5yy.png" alt="">
+                    <h3>Bio: Vruchten</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087858/EcoBiscuits/stuk_spelt_amandel_jfjju6.png" alt="">
+                    <h3>Spelt: Amandel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087861/EcoBiscuits/stuk_spelt_chocolade_cktcgf.png" alt="">
+                    <h3>Spelt: Chocolade</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087860/EcoBiscuits/stuk_spelt_muesli_ewkdhl.png" alt="">
+                    <h3>Spelt: Muesli</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087861/EcoBiscuits/stuk_spelt_speculaas_amandel_gnvl2y.png" alt="">
+                    <h3>Spelt: Speculoos met amandelen</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+
+                <!--  -->
+
+                <h2>Per doos</h2>
+                <span></span>
+
+                <!--  -->
+
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087826/EcoBiscuits/doos_amandel_ow78ov.png" alt="">
+                    <h3>Galette amandel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087827/EcoBiscuits/doos_gember_ueacxf.png" alt="">
+                    <h3>Galette gember</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087827/EcoBiscuits/doos_kokos_cacao_moddkh.png" alt="">
+                    <h3>Galette kokos/cacao</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087826/EcoBiscuits/doos_smik_smac_ggfeh5.png" alt="">
+                    <h3>Smic Smac</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087827/EcoBiscuits/doos_smik_smac_chocolade_zbqduv.png" alt="">
+                    <h3>Smic Smac chocolade</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087827/EcoBiscuits/doos_speculaas_bteknk.png" alt="">
+                    <h3>Speculaas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087828/EcoBiscuits/doos_spelt_krenten_wy3zum.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087827/EcoBiscuits/doos_spelt_speculaas_r2agk3.png" alt="">
+                    <h3>Palmvrije Spelt speculaas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087826/EcoBiscuits/doos_chocolade_speculaas_xayimo.png" alt="">
+                    <h3>Chocolade speculaas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+
+                <!--  -->
+
+                <h2>Per karton</h2>
+                <span></span>
+
+                <!--  -->
+
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_spelt_amandel_ohiu0s.png" alt="">
+                    <h3>Amandelkoekjes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087831/EcoBiscuits/karton_chocolade_h180hx.png" alt="">
+                    <h3>Chocoladekoekjes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087835/EcoBiscuits/karton_kokos_wvtntl.png" alt="">
+                    <h3>Kokoskoekjes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087836/EcoBiscuits/karton_muesli_ujz5y3.png" alt="">
+                    <h3>Mueslikoekjes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087825/EcoBiscuits/noisettes_i5cvxt.png" alt="">
+                    <h3>Noisettes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087840/EcoBiscuits/karton_rosino_r5dh3e.png" alt="">
+                    <h3>Rosino’s</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087840/EcoBiscuits/karton_sesam_ad2nk7.png" alt="">
+                    <h3>Sesamkoekjes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_smic_smac_el8nse.png" alt="">
+                    <h3>Smic Smac</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_speculaas_ywlivz.png" alt="">
+                    <h3>Speculaas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_sprits_ss53to.png" alt="">
+                    <h3>Sprits</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_spelt_amandel_ohiu0s.png" alt="">
+                    <h3>Spelt: Amandel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_spelt_amandel_ohiu0s.png" alt="">
+                    <h3>Spelt: Chocolade</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,q_10,w_400/v1576087841/EcoBiscuits/karton_spelt_muesli_cbp1md.png" alt="">
+                    <h3>Spelt: Muesli</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus enim iusto
+                        <a href="assortiment_data.html">[Meer info]</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="openinguren">
+                    <p>Du lundi au vendredi : de 8 h à 17 h</p>
+                    <p>Week-end et jours fériés fermés.</p>
+                </div>
+                <div class="social">
+                    <p>Suivez-nous:
+                        <a href="https://www.facebook.com/ecobiscuits.be/" target="_blank"><img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,h_20,q_40,w_20/v1576087827/EcoBiscuits/facebook_mkeeln.png" alt="Volg ons op facebook"></a>
+                    </p>
+                </div>
+                <div class="adres">
+                    <p>Lossing 21 • B 2260 Heultje-Westerlo • België</p>
+                    <p>info@ecobiscuits.be</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

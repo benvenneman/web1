@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Eco Buiscuits | Contacter</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,w_40/v1576087842/EcoBiscuits/logo_sshctf.png" class="header-logo" alt="">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                    <ul>
+                        <li><a href="index_fr.html">Home</a></li>
+                        <li><a href="assortiment_fr.html">Assortiment</a></li>
+                        <li><a href="contact_fr.html" class="current">Contacter</a></li>
+                        <li><a href="overons_fr.html">A propos de nous</a></li>
+                        <li><a href="#">Langues</a>
+                            <ul>
+                                <li><a href="index.html">NL</a></li>
+                                <li><a href="index_fr.html">FR</a></li>
+                                <li><a href="index_en.html">EN</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- 
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox" name="checkDarkmode" onclick="Darkmodeactivator(this)" id="darkmode" />
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                         -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contact-first">
+                <div class="contactformulier">
+                    <form action="action_page.php">
+
+                        <label for="Prénom">Prénom</label>
+                        <input type="text" id="Prénom" name="Prénom" class="voornaam">
+
+                        <label for="Nomdefamille">Nom de famille</label>
+                        <input type="text" id="Nomdefamille" name="Nomdefamille" class="achternaam">
+
+                        <label for="email">Adresse e-mail</label>
+                        <input type="text" id="email" name="email" class="email">
+
+                        <label for="Raison">Raison</label>
+                        <select id="Raison" name="Raison" class="reden">
+                                              <option value="Commander">Commander</option>
+                                              <option value="Question">Question</option>
+                                              <option value="Remarque">Remarque</option>
+                                              <option value="Suggestion">Suggestion</option>
+                                            </select>
+
+                        <label for="bericht">Message</label>
+                        <textarea id="bericht" name="bericht" style="height:200px"></textarea>
+
+                        <input type="submit" value="Expédition">
+
+                    </form>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Lossing%2021%20B%202260%20Heultje-Westerlo%20Belgi%C3%AB&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+
+                    </div>
+                </div>
+                <div class="contactgegevens">
+                    <p>Lossing 21B <br> 2260 Heultje-Westerlo <br> België<br> </p>
+                    <p>info@ecobiscuits.be</p>
+                    <p>015 22 50 88</p>
+                </div>
+                <div class="openingsuren">
+                    <p>Heures d'ouverture :</p>
+                    <p>Du lundi au vendredi</p>
+                    <p>de 8h à 17h.</p>
+                    <p>Pendant les week-ends et les jours fériés</p>
+                    <p>fermé.</p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="openinguren">
+                    <p>Du lundi au vendredi : de 8 h à 17 h</p>
+                    <p>Week-end et jours fériés fermés.</p>
+                </div>
+                <div class="social">
+                    <p>Suivez-nous:
+                        <a href="https://www.facebook.com/ecobiscuits.be/" target="_blank"><img src="https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,h_20,q_40,w_20/v1576087827/EcoBiscuits/facebook_mkeeln.png" alt="Volg ons op facebook"></a>
+                    </p>
+                </div>
+                <div class="adres">
+                    <p>Lossing 21 • B 2260 Heultje-Westerlo • België</p>
+                    <p>info@ecobiscuits.be</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1014 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/*
+
+Navigatiebar
+
+*/
+
+
+/* Grid navigatiebar en logo.*/
+
+.container {
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+.darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    right: 32px;
+    bottom: 32px;
+    left: unset;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav .current {
+    background-color: rgba(200, 200, 200, 0.8);
+    border-bottom: darkcyan solid 3px;
+}
+
+nav .header-logo {
+    font-family: arial;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+    width: 4.5em;
+    height: auto;
+}
+
+nav label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+nav #toggle {
+    display: none;
+}
+
+nav ul:last-of-type {
+    float: left;
+    height: auto;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    height: 60px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 14px;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    z-index: 1;
+    /* To keep the menu on top of the map */
+    display: none;
+    position: absolute;
+    padding: 2px;
+    width: auto;
+}
+
+nav ul li ul li {
+    float: none;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: rgb(200, 200, 200)
+}
+
+
+/*
+
+Index.html
+
+*/
+
+
+/* Hero afbeelding zonder parallax effect met de titel op.*/
+
+.background {
+    background-image: url("https://res.cloudinary.com/ucll-proximus/image/upload/c_scale,h_500,q_80,w_2000/v1576091127/EcoBiscuits/-SGB_201701065020_savdo6.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+
+.background h1 {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Maken van de grid voor de eerste sectie van de indexpagina */
+
+.contentfirst {
+    color: black;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+
+/* Content styling van de eerte sectie va de indexpagina*/
+
+.contentfirst .left {
+    text-align: right;
+    grid-column: 2 / 6;
+}
+
+.contentfirst img {
+    display: block;
+    grid-column: 6 / -1;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contentfirst p {
+    line-height: 1.5em;
+}
+
+.contentfirst .left p:first-of-type {
+    margin-top: 1%;
+}
+
+.contentfirst .left p:last-of-type {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.contentfirst .left h2:first-of-type {
+    margin-top: 2%;
+}
+
+.contentfirst .left h2:last-of-type {
+    margin-top: 4%;
+}
+
+.contentfirst .left h2:first-of-type,
+p:first-of-type {
+    grid-column: 2 / 5;
+    /*margin-left: 5%;*/
+}
+
+.contentfirst .left h2:last-of-type,
+p:last-of-type {
+    grid-column: 2 / 5;
+    /*margin-left: 5%;*/
+}
+
+
+/* Maken van de grid voor de tweede sectie van de indexpagina */
+
+.contentsecond {
+    color: black;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+    margin-bottom: 3%;
+}
+
+
+/* Content styling van de tweede sectie va de indexpagina*/
+
+.contentsecond .right {
+    text-align: left;
+    grid-column: 5 / -1;
+}
+
+.contentsecond img {
+    display: block;
+    grid-column: 2 / 5;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contentsecond p {
+    line-height: 1.5em;
+}
+
+.contentsecond .left p:first-of-type {
+    margin-top: 1%;
+}
+
+.contentsecond .left p:last-of-type {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.contentsecond .right h2 {
+    margin-top: 2%;
+}
+
+.contentsecond .left h2:last-of-type {
+    margin-top: 4%;
+}
+
+.contentsecond .left h2:first-of-type,
+p:first-of-type {
+    grid-column: 2 / 5;
+}
+
+.contentsecond .left h2:last-of-type,
+p:last-of-type {
+    grid-column: 2 / 5;
+}
+
+
+/*
+
+Contact.html
+
+*/
+
+
+/* Maken van de grid voor de eerste sectie van de contactpagina */
+
+.contact-first {
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+
+/* Content styling van de eerste sectie van de contactpagina*/
+
+.contact-first .contactgegevens {
+    margin-top: 20%;
+    margin-right: 5%;
+    text-align: left;
+    grid-column: 1 / 3;
+    margin-left: 5%;
+}
+
+.contact-first .openingsuren {
+    margin-top: 20%;
+    grid-column: 3 / 5;
+}
+
+
+/* Contactformulier */
+
+.contactformulier {
+    margin-top: 5%;
+    grid-column: 5 / 9;
+    grid-row: 1 / 3;
+    margin-bottom: 5%;
+}
+
+.contactformulier .privacy-claimer {
+    width: auto;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.contactformulier input:last-of-type {
+    display: block;
+}
+
+input[type=text],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: rgb(255, 255, 255);
+    resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #1a3394;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=submit] {
+    background-color: #12205a;
+    color: whitesmoke;
+}
+
+input[type=submit]:hover {
+    background-color: #12205a;
+}
+
+.contactformulier .voornaam {
+    width: 50%;
+}
+
+.contactformulier .achternaam {
+    width: 50%;
+}
+
+.contactformulier .email {
+    width: 50%;
+}
+
+.contactformulier .reden {
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+}
+
+.bericht {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* De google maps kaart */
+
+.mapouter {
+    margin-top: 5%;
+    margin-left: 2.5%;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-first iframe {
+    border: none;
+    margin: 0;
+}
+
+
+/*
+
+overons.html
+
+*/
+
+
+/* Maken van de grid voor de eerste sectie van de over ons pagina */
+
+.grid-container-about {
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+
+/* Content styling van de tweede sectie van de over ons pagina*/
+
+.firstelement {
+    grid-column: 1 / 9;
+}
+
+.container-secondcontent-about {
+    grid-column: 2 / 8;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.container-secondcontent-about p {
+    line-height: 1.5em;
+    column-count: 2;
+    column-gap: 2em;
+}
+
+.container-frans {
+    line-height: 1.5em;
+    text-align: left;
+    grid-column: 2 / 4;
+}
+
+.container-annemieke {
+    line-height: 1.5em;
+    text-align: left;
+    grid-column: 6 / 8;
+}
+
+.grid-container-about img {
+    grid-column: 4 / 6;
+    width: 100%;
+}
+
+
+/*
+
+assortiment.html
+
+*/
+
+
+/* Maken van de grid voor de eerste sectie van de indexpagina */
+
+
+/* Styling van de producten van de assortiment pagina */
+
+.cardholder {
+    box-sizing: border-box;
+    height: auto;
+}
+
+.cardholder h2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.cardholder span {
+    border-bottom: #12205a solid 2px;
+    display: block;
+    width: 81%;
+    margin-left: 10%;
+}
+
+.cardholder .card {
+    display: inline-block;
+    background-color: #fff;
+    display: grid;
+    color: black;
+    margin-left: 10%;
+    margin-top: 2%;
+    justify-content: left;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.cardholder .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cardholder .card img {
+    width: 95%;
+    height: auto;
+}
+
+.cardholder .card h3 {
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2%;
+}
+
+.cardholder .card p {
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 2%;
+}
+
+.cardholder .card:last-of-type {
+    margin-bottom: 5%;
+}
+
+
+/*
+
+Footer
+
+*/
+
+
+/* Content styling van de footer */
+
+footer {
+    background-color: #f0f5f0;
+    color: black;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+footer .openinguren {
+    margin-top: 5%;
+    grid-column: 1 / 2;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+footer .social {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer .adres {
+    margin-top: 5%;
+    grid-column: 3 / 4;
+    text-align: center;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+
+/* 
+
+Mobiele versie
+
+*/
+
+@media screen and (max-width: 736px) {
+    /*
+
+    Navigatie bar
+
+    */
+    nav ul {
+        z-index: 1;
+        border-top: #000 solid 1px;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: relative;
+    }
+    nav .current {
+        background-color: rgba(200, 200, 200, 0.8);
+        border-bottom: none;
+    }
+    nav .current a {
+        background-color: #fff;
+        color: black;
+    }
+    nav label {
+        display: block;
+        cursor: pointer;
+        height: 60px;
+    }
+    nav #toggle:checked+ul {
+        display: block;
+    }
+    nav ul li {
+        float: none;
+        border-bottom: #12205a solid 1px;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    nav ul li ul {
+        z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 0px 0px 4px 4px;
+        width: 100%;
+    }
+    nav ul li ul {
+        display: none;
+        position: relative;
+    }
+    nav ul li:hover ul {
+        display: block;
+    }
+    nav ul li ul li {
+        width: 100%;
+        border-radius: 4px;
+    }
+    nav ul li ul li a {
+        padding: 8px 14px;
+    }
+    nav ul li ul li a:hover {
+        background-color: #f3f3f3;
+    }
+    /*
+    Index.html
+    */
+    /* Wegdoen van de grid en styling van het eerste content gedeelte*/
+    .contentfirst {
+        margin-left: 0%;
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .contentfirst .left {
+        text-align: left;
+        margin-left: 5%;
+    }
+    .contentfirst img {
+        text-align: left;
+    }
+    /* Wegdoen van de grid en styling van het tweede content gedeelte*/
+    .contentsecond {
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-left: 0px;
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .contact-first {
+        display: block;
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .container-secondcontent {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contentsecond .right {
+        text-align: left;
+        margin-left: 5%;
+    }
+    .contentsecond img {
+        margin-left: 0%;
+        text-align: right;
+    }
+    /* Google maps kaart */
+    .contact-first .mapouter {
+        margin-left: 0%;
+        width: 100%;
+    }
+    /* Styling van het contactformulier */
+    .contact-first .contactformulier {
+        width: 90%;
+        margin: auto;
+    }
+    .contact-first .contactgegevens,
+    .openingsuren {
+        margin-left: 5%;
+        width: 95%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: auto;
+        grid-row: 2 / 3;
+    }
+    .contactformulier .voornaam {
+        width: 100%;
+    }
+    .contactformulier .achternaam {
+        width: 100%;
+    }
+    .contactformulier .email {
+        width: 100%;
+    }
+    .contactformulier .reden {
+        width: 60%;
+    }
+    .contact-first .contactgegevens {
+        margin-right: 5%;
+        text-align: left;
+        grid-column: 1 / 3;
+        margin-left: 5%;
+    }
+    input[type=submit] {
+        float: none;
+    }
+    /*
+    
+    overons.html
+    
+    */
+    /* Wegdoen van de grid en styling van het eerste content gedeelte*/
+    .grid-container-about {
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .container-secondcontent-about {
+        text-align: left;
+        grid-column: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .container-secondcontent-about p {
+        column-count: 1;
+    }
+    .container-frans {
+        grid-column: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .container-annemieke {
+        grid-column: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .grid-container-about img {
+        grid-column: auto;
+    }
+    /*
+    
+    assortiment.html
+    
+    */
+    .cardholder .card {
+        width: 35%;
+    }
+    /*
+
+    Footer
+
+    */
+    footer {
+        height: auto;
+    }
+    footer .container-footer {
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        display: block;
+        text-align: left;
+        height: auto;
+    }
+    footer .openinguren,
+    footer .social,
+    footer .adres {
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+    }
+    footer .adres {
+        margin-bottom: 0%;
+    }
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/** VOOR DE POPUPBOX IS EEN TEST**/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.modal-content img {
+    width: 50%;
+    height: 50%;
+}
+
+
+/* The Close Button */
+
+.modal-content span {
+    border-bottom: none;
+    width: 100%;
+    float: right;
+    margin-left: 0%;
+}
+
+.modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*
+
+OPTIE TWEE
+
+*/
+
+.assortiment_data-container {
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 92rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+    grid-gap: 1.6vw;
+    row-gap: 1.6vw;
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+    align-items: start;
+}
+
+.assortiment_data-container img {
+    display: block;
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.assortiment_data-container .ingredienten {
+    grid-column: 5 / 9;
+    grid-row: 1 / 2;
+    line-height: 1.5em;
+    column-count: 2;
+    column-gap: 2em;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.assortiment_data-container .beschrijving {
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+}
+
+@media screen and (max-width: 736px) {
+    .assortiment_data-container {
+        margin-left: 0%;
+        grid-gap: 0vw;
+        row-gap: 0vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .assortiment_data-container img {
+        grid-column: auto;
+    }
+}
